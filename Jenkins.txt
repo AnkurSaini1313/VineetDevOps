@@ -1,0 +1,94 @@
+Introduction
+Welcome to the Building a Kanban Board Lab. Your assignment for this exercise is to build a Kanban board in Jira.
+
+Note: For the purpose of this exercise, you require a registered account with Atlassian. In https://www.atlassian.com/, you can create an account and access Jira Software as part of the Free plan.
+
+Tasks
+Build a Kanban board in Jira.
+
+Use Jira to implement a Kanban board
+Create a Kanban board with "To Do, In Progress, Testing, Done" columns. Set a work limit on the "In Progress" column.
+Add Bugs and Story issue types
+Add a rule to assign issues to you automatically
+Add an Epic to your Roadmap
+Add the Backlog feature to your board
+The model solution to these tasks is presented in the Solution section that follows.
+
+
+Solution
+The model solution for how to build a Kanban board in Jira is detailed below.
+
+Task 1
+Step 1
+In this exercise, we are going to build a Kanban board, which will require you to have an Atlassian account. If you do not currently have an account, you can sign up for a free account with Atlassian from atlassian.net and select Jira Software when registering. Once you have a registered account with Atlassian, sign into atlassian.net and select Jira Software. Here you can use the free version of Jira to build a new project.
+
+Step 2
+To create a Project, click on Create project button near the middle of the screen, select the Kanban template, and then click the Use template button. On the left-hand side we have the Team-managed project type and on the right-hand side we have Company-managed project type. Click the Select a team-managed project button.
+
+Step 3
+In the Add project details window, provide the project Name as KanbanDemo and click the Create project button. Now, we have built a Kanban board using Jira.
+
+Task 2
+Step 1
+You are presented with a blank Kanban board that will allow you to display issues for the project. By default, we have columns TO DO, IN PROGRESS and DONE. The next task is to set up a new Column. Columns can be created or removed or reordered to suit your team's workflow. Now we modify the column as TO DO, IN PROGRESS, TESTING and DONE. In order to add an extra column, click on the plus sign to Create column.
+
+Step 2
+Rename this column as TESTING and click on the little check mark below the column name.
+
+Step 3
+Now, drag this TESTING column before the column DONE. Thus, the column DONE will move off to the right.
+
+Step 4
+We can set up constraints to ensure that the workload does not overwhelm the capacity of the team. To do that, in the IN PROGRESS, column click on the three dots.
+
+Step 5
+In the pop-up menu, select the first option Set column limit. In the Column limit dialog box, set the Maximum issues count to 10 and click Save.
+
+Task 3
+Step 1
+The next task is to create some issues. We need to work with our team to document our outstanding work items and catalog them into stories, epics, bugs, and tasks and any other type of work items that we need. So, to create an issue, inside the TO DO column, click Create issue.
+
+Step 2
+By default, the only issue type we have is Task. So, we need to set up the Board to have the issues that are required. In the What needs to be done? box of the TO DO column click the drop-down arrow and select Manage issue types.
+
+Step 3
+Now, the issue types can be modified to be exactly what the team needs. To do that, click + Add issue type from the Issue types pane on the left side of the screen.
+
+Step 4
+In the Add issue type dialog box, select Bug, which is selected by default, and click on Add button.
+
+Step 5
+Now we can see Bug listed under Task in the Issue types pane. Repeat the same process for Story. To do this, click on Add issue type, select Story, and click on Add button. Now the Story is added under Bug.
+
+Step 6
+Return to the Kanban Board. To quickly do this, use the breadcrumb path (Projects / KanbanDemo / Project settings / Issue types) at the top centre of the screen and click on the KanbanDemo to return to the Kanban Board.
+
+Step 7
+Now, to create an issue under the TO DO column, click on link Create issue, and type in a description as Menu does not expand. Click the drop-down arrow to assign this issue as a Bug and press Enter. An issue of type Bug is created. Now click on this work item, we get an expanded window with more field and capabilities. Here we can add attachments, add child issues, link issues and link it back to a confluence page if we are using other Atlassian tools. For example, we can install our own extensions. In the Description field we can enter more details relating to the issue. we can also assign the issue to a specific team member and add a label for categorizing the item. Now, close this window.
+
+Task 4
+Step 1
+We can also add rules to your Kanban board to streamline the flow of information. For example, some teams like to pick up work when they become available. Others use a coordinator who assigns it based on upcoming workloads. Now we are going to add a rule that will assign all new issues to the work coordinator. On the top right side of the Kanban board click on the three dots and select Manage workflow.
+
+Step 2
+From the Workflow for KanbanDemo window, click on Rule. In the Add rule dialog box, the first option will allow you to assign the issue to someone based on a particular transaction.
+
+Step 3
+Select the first rule, Assign an issue to someone and click Select. In the Add rule dialog box, expand the For transaction field drop-down, which lists five options: ANY STATUS -> TO DO, ANY STATUS -> IN PROGRESS, ANY STATUS -> TESTING, ANY STATUS -> DONE, and Start -> TO DO. Select ANY STATUS -> TO DO and in the Assign to field select yourself and click Add. Finally, click on the Update workflow button near the top right-hand side of the screen
+
+Task 5
+Step 1
+Now we create a Roadmap for this project. So, this is a place where we can keep future projects documented as Epics to communicate the plans with a team and stakeholders. Return to the Kanban board and then click on Roadmap in the left-hand pane of the screen.
+
+Step 2
+Now, in the Roadmap window, first, create an epic. By default, under Epic there is an open a textbox where we give the name of epic as Add customer portal and then press Enter.
+
+Step 3
+Now click on the Add customer portal epic to expand this work item. Epics are like issues but have additional properties. Here, we can add attachments, descriptions, child issues, link issues, and assign it to team members. Additionally, you can add some start and due dates to forecast out work items for the team.
+
+Task 6
+Step 1
+To offset the outstanding backlog items away from the items that are actively going to be worked on, we enable the Backlog feature for JIRA. To do this we need to navigate back to the Kanban board. Use the breadcrumb path at the top of the screen and click KanbanDemo.
+
+Step 2
+Click on Project settings option in the left-hand pane and then select the Features option. The slider for Backlog is turned off by default, so you will need to click on the slider to enable the Backlog feature. You should see a green check mark in the slider. Now we can add new issues to the backlog and then move them up to the board when capacity becomes available. This will help to prevent the board from getting cluttered and streamlines prioritize work being present for the team to work from.
