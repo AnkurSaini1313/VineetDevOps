@@ -1,0 +1,33 @@
+
+INC000003860666 - PAS/ User is having issues with some patient account giving her an error
+PLA/600065696 21 DAY
+
+WO0000003755023 - what is the standard UB CODE for relationship code, since G8 seens to be setup for many
+
+INC000003895229 - ESTA:ADT tx failed. HP802INT/307008. Proc Dates not in seq in NCJPDCP. Please Correct the file and r
+
+INC000003882845 - USCA // JOB: CDMLNC0443 // The year portion of a Date or Timestamp value is not in the correct range (C G D F). 
+CDMLNC0443 job error and duplicate reports to dms
+CDPRCHL3 - CDCEFD 
+
+INC000003895044 - ESTA: Expected PAI Edit file for hosp VIT is not available on DES server for Dt 120522. Please coord
+NC0667CL1
+
+INC000003895418 - MODB:EMT FTP problem with hospital CONNECT in FDFTPPROC job. Please check mbr EMT1206SBB of file PBCLFTPO
+         
+INC000003895423 - USCA:ACE Transmission Job (ACENC0294) for HDT attempting to process for today, but there are still unacknowledged transmits pending
+
+
+
+
+
+INC000003894815 - MODB:These MRNs on MODB were submitted to Cerner Pat Portal, but failed. Please review the error, co
+ND0794
+Wrklnk '/home/pbar/CernerAPI/CernerAPIlogs/*61009730*'
+
+For MRN we check the response code and try resubmitting the job if needed:
+1: If response code 400 Invalid email, check the account number and share the details
+2. If 500 then try resubmit
+3. If 201 then the request accepted
+4. If Duplicate invite error in log then close
+5. If no opt in flag while submitting via CAPIM , close
